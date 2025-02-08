@@ -3,9 +3,41 @@
       --color-secondary: #EBD0CD;
       --color-accent: #F4E0D8;
       --color-background: #F2E8E4;
+
+      --color-text-primary: #333333;
+      --color-text-secondary: #555555;
+      --color-text-accent: #C76D6D;
+      --color-text-on-accent: #FFFFFF;
+      --color-text-neutral: #7D7D7D;
 }
 
-body {
+body,
+p {
       margin: 0;
       padding: 0;
+}
+
+/* Fonts */
+
+@font-face {
+      font-family: 'Promag';
+      src: url('./fonts/PROMAG-Medium.otf') format('opentype');
+}
+
+.font-primary {
+      font-family: 'Promag';
+      font-weight: 300;
+      font-style: normal;
+}
+
+.font-secondary {
+      font-family: "Poppins", serif;
+      font-weight: 300;
+      font-style: normal;
+}
+
+.font-secondary-regular {
+      font-family: "Poppins", serif;
+      font-weight: 400;
+      font-style: normal;
 }

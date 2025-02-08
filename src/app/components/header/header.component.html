@@ -1,7 +1,7 @@
 <div class="container">
       <div class="headerRow">
             <img class="headerRowLogo" src="/assets/img/logo-primary.avif" alt="Logo">
-            <div style="cursor: pointer;">
+            <div style="cursor: pointer;" (click)="menu.toggleMenu()">
                   <label class="burger" for="burger">
                         <span></span>
                         <span></span>
@@ -10,3 +10,5 @@
             </div>
       </div>
 </div>
+
+<app-menu #menu></app-menu>
