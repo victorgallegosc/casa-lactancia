@@ -1,6 +1,6 @@
 .container {
       background-color: var(--color-background);
-      padding: 10px;
+      padding: var(--spacing-md);
 }
 
 .headerRow {
@@ -9,6 +9,7 @@
       justify-content: space-between;
       align-items: center;
       height: fit-content;
+      gap: var(--spacing-md);
 }
 
 .headerRow .headerRowLogo {
