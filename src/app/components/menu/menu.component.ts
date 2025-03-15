@@ -13,7 +13,7 @@ export class MenuComponent {
       menuItems = [
             {
                   name: 'Inicio',
-                  path: 'header',
+                  path: 'home',
             },
             {
                   name: 'Sobre mi',
