@@ -1,7 +1,10 @@
+/* ==========================================================================
+   Profile Card Container
+   ========================================================================== */
 .profile-section {
       position: relative;
       width: 100%;
-      padding: var(--spacing-lg);
+      padding: var(--spacing-xl);
       background: linear-gradient(145deg,
                   rgba(255, 255, 255, 0.95) 0%,
                   rgba(255, 255, 255, 0.85) 100%);
@@ -11,12 +14,15 @@
       border: 1px solid rgba(231, 197, 191, 0.2);
 }
 
+/* ==========================================================================
+   Profile Content Layout
+   ========================================================================== */
 .profile-content {
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: var(--spacing-sm);
+      gap: var(--spacing-xl);
 }
 
 .profile-header {
@@ -26,9 +32,12 @@
       align-items: center;
       text-align: center;
       gap: var(--spacing-md);
-      padding: var(--spacing-md);
+      padding: 0;
 }
 
+/* ==========================================================================
+   Profile Image Styles
+   ========================================================================== */
 .profile-image {
       width: 120px;
       height: 120px;
@@ -43,6 +52,9 @@
       transform: scale(1.05);
 }
 
+/* ==========================================================================
+   Profile Information
+   ========================================================================== */
 .profile-info {
       display: flex;
       flex-direction: column;
@@ -64,21 +76,23 @@
       opacity: 0.9;
 }
 
-/* Tablet and desktop styles */
+/* ==========================================================================
+   Media Queries - Tablet (768px)
+   ========================================================================== */
 @media (min-width: 768px) {
       .profile-content {
-            gap: var(--spacing-xl);
+            gap: var(--spacing-2xl);
       }
 
       .profile-section {
-            padding: var(--spacing-xl);
+            padding: var(--spacing-2xl);
       }
 
       .profile-header {
             flex-direction: row;
             justify-content: center;
             gap: var(--spacing-xl);
-            padding: var(--spacing-lg);
+            padding: 0;
       }
 
       .profile-image {
@@ -100,6 +114,9 @@
       }
 }
 
+/* ==========================================================================
+   Media Queries - Desktop (1024px)
+   ========================================================================== */
 @media (min-width: 1024px) {
       .profile-section {
             padding: var(--spacing-2xl);
