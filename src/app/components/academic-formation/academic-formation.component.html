@@ -1,0 +1,33 @@
+<div class="academic-formation">
+      <section class="academic-section" *ngFor="let section of academicItems">
+            <h2 class="font-primary section-title">{{section.title}}</h2>
+            <div class="academic-items">
+                  <div class="academic-item" *ngFor="let item of section.items">
+                        <h3 class="font-primary item-title">{{item.degree}}</h3>
+                        <p class="font-secondary institution">{{item.institution}}</p>
+                        <p class="font-secondary description" *ngIf="item.description">{{item.description}}</p>
+                  </div>
+            </div>
+      </section>
+
+      <section class="academic-section">
+            <h2 class="font-primary section-title">Conferencista de Lactancia en:</h2>
+            <ul class="list-items">
+                  <li class="font-secondary" *ngFor="let conference of conferences">{{conference}}</li>
+            </ul>
+      </section>
+
+      <section class="academic-section">
+            <h2 class="font-primary section-title">Colaboraciones</h2>
+            <ul class="list-items">
+                  <li class="font-secondary" *ngFor="let collab of collaborations">{{collab}}</li>
+            </ul>
+      </section>
+
+      <section class="academic-section">
+            <h2 class="font-primary section-title">Miembro de</h2>
+            <ul class="list-items">
+                  <li class="font-secondary" *ngFor="let member of memberships">{{member}}</li>
+            </ul>
+      </section>
+</div>
