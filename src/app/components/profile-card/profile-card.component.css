@@ -4,6 +4,7 @@
 .profile-section {
       position: relative;
       width: 100%;
+      min-width: 100%;
       padding: var(--spacing-xl);
       background: linear-gradient(145deg,
                   rgba(255, 255, 255, 0.95) 0%,
@@ -45,11 +46,6 @@
       object-fit: cover;
       border: 3px solid var(--color-primary);
       box-shadow: 0 8px 24px rgba(199, 109, 109, 0.15);
-      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.profile-image:hover {
-      transform: scale(1.05);
 }
 
 /* ==========================================================================
@@ -86,6 +82,8 @@
 
       .profile-section {
             padding: var(--spacing-2xl);
+            width: 100%;
+            min-width: 300px;
       }
 
       .profile-header {
@@ -120,11 +118,12 @@
 @media (min-width: 1024px) {
       .profile-section {
             padding: var(--spacing-2xl);
+            min-width: 350px;
       }
 
       .profile-image {
-            width: 180px;
-            height: 180px;
+            width: 140px;
+            height: 140px;
       }
 
       .profile-name {
