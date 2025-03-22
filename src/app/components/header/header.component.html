@@ -1,14 +1,31 @@
-<div class="container">
-      <div class="headerRow">
-            <img class="headerRowLogo" src="./img/logo-primary.avif" alt="Logo">
-            <div style="cursor: pointer;" (click)="menu.toggleMenu()">
-                  <label class="burger" for="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                  </label>
+<header class="header">
+      <div class="container">
+            <div class="header-content">
+                  <div class="logo-section">
+                        <img class="logo" src="./img/logo-primary.avif" alt="Logo">
+                  </div>
+
+                  <!-- Mobile burger menu -->
+                  <div class="mobile-menu" (click)="menu.toggleMenu()">
+                        <label class="burger" for="burger">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                        </label>
+                  </div>
             </div>
+
+            <!-- Desktop menu -->
+            <nav class="desktop-menu">
+                  <ul>
+                        <li *ngFor="let item of menu.menuItems">
+                              <a class="font-primary nav-link" (click)="menu.onClickMenuItem(item.path)">
+                                    {{item.name}}
+                              </a>
+                        </li>
+                  </ul>
+            </nav>
       </div>
-</div>
+</header>
 
 <app-menu #menu></app-menu>
